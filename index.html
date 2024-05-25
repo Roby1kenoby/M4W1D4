@@ -92,7 +92,7 @@
             <div id="author" class="">
               <h2></h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3">
-                <div class="album-card card d-none" data-bs-toggle="modal" data-bs-target="#tracksModal" onClick="getAlbum()">
+                <div class="album-card card d-none" onClick="getAlbum()">
                   <img src="" class="album-img card-img-top" alt="missing">
                   <div class="card-body">
                     <h5 class="album-title card-title text-truncate"></h5>
@@ -106,15 +106,22 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalAlbumTitle">AlbumTitle</h1>
+                    <h3 class="modal-title fs-5" id="modalAlbumTitle">AlbumTitle</h1>
                   </div>
                   <div class="modal-body">
-                    <ul>
-                      <li>ciao1</li>
-                      <li>ciao1</li>
-                      <li>ciao1</li>
-                      <li>ciao1</li>
-                    </ul>
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Titolo</th>
+                          <th scope="col">Autore</th>
+                          <th scope="col">Durata</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
                   </div>
                   <div class="modal-footer">
                   </div>
